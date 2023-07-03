@@ -1,0 +1,96 @@
+POST http://localhost:3333/users
+Content-Type: application/json
+
+{
+    "name": "Saiful",
+    "email": "saiful@gmail.com",
+    "password": "abc123456789",
+    "confPassword": "abc123456789",
+    "role": "user"
+}
+
+###
+
+GET http://localhost:3333/users
+
+###
+
+GET http://localhost:3333/users/5eb0e2c2-d7e9-4834-8971-67f502686483
+
+###
+
+PATCH  http://localhost:3333/users/56d34807-2f0a-4103-8908-3adb5e8a0bc1
+Content-Type: application/json
+
+{
+    "name": "Abdul Azis",
+    "email": "azis@gmail.com",
+    "password": "abc123456789",
+    "confPassword": "abc123456789",
+    "role": "user"
+}
+
+###
+
+DELETE http://localhost:3333/users/d5f5a70f-8f5c-485c-9afb-3350baa268a8
+
+###
+
+POST  http://localhost:3333/login
+Content-Type: application/json
+
+{
+    "email": "admin@gmail.com",
+    "password": "abc123456789"
+}
+
+###
+
+POST  http://localhost:3333/login
+Content-Type: application/json
+
+{
+    "email": "azis@gmail.com",
+    "password": "abc123456789"
+}
+
+###
+
+GET  http://localhost:3333/me
+Content-Type: application/json
+
+###
+
+DELETE  http://localhost:3333/logout
+Content-Type: application/json
+
+###
+
+GET  http://localhost:3333/products
+
+###
+
+POST  http://localhost:3333/products
+Content-Type: application/json
+
+{
+    "name": "ASUS ROG",
+    "price": 28000000
+}
+
+###
+
+GET  http://localhost:3333/products/bb5e9c3b-6396-4f59-bfad-443e6b03f1d8
+###
+
+PATCH http://localhost:3333/products/9d390db2-7f1e-4214-abdb-9b0c7e2e4c9c
+Content-Type: application/json
+
+{
+    "name": "Acer Swift 2023",
+    "price": 15000000
+}
+
+###
+
+DELETE http://localhost:3333/products/e6fad097-27a2-4d2a-9e0f-2a8b7543691b
